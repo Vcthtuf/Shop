@@ -20,13 +20,24 @@
         </ul>
       </nav>
       <div class="title">
-        <h1>Ноутбук Asus F507UF-EJ393T</h1>
+        <?php>
+            $name = 'Ноутбук Asus F507UF-EJ393T';
+        echo('<h1>'. $name . '</h1>');
+        ?>
       </div>
-      <div class="images"><a href="img/jpg/Asus/F507UF_1.jpg" target="_blank"><img src="img/jpg/Asus/F507UF_1.jpg" alt="Asus F507UF"></a><a href="img/jpg/Asus/F507UF_2.jpg" target="_blank"><img src="img/jpg/Asus/F507UF_2.jpg" alt="Asus F507UF"></a><a href="img/jpg/Asus/F507UF_3.jpg" target="_blank"><img src="img/jpg/Asus/F507UF_3.jpg" alt="Asus F507UF"></a></div>
+      <div class="images"><a href="img/jpg/Asus/F507UF_1.jpg" target="_blank"><img src="img/jpg/Asus/F507UF_1.jpg" alt="Asus F507UF"></a>
+      <a href="img/jpg/Asus/F507UF_2.jpg" target="_blank"><img src="img/jpg/Asus/F507UF_2.jpg" alt="Asus F507UF"></a>
+      <a href="img/jpg/Asus/F507UF_3.jpg" target="_blank"><img src="img/jpg/Asus/F507UF_3.jpg" alt="Asus F507UF"></a>
+    </div>
       <div class="descr">
+          
         <h3>Краткое описание товара</h3>
         <div class="descr_short"> 
-          <p>Ноутбук ASUS Laptop X507UF - это мультимедийный ноутбук для повседневного использования</p>
+            <?php 
+                $descr = 'Ноутбук ASUS Laptop X507UF - это мультимедийный ноутбук для повседневного использования';
+                echo('<p>'.$descr.'</p>');
+            ?>
+          <!-- <p></p> -->
         </div>
         <div class="descr_specifications">
           <h3>Характеристики товара</h3>
