@@ -1,0 +1,40 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="description" content="Internet-shop")
+        meta(name="author" content="Melnikov Sergey")
+        title Ноутбуки - интернет магазин
+        link(rel="icon" href="icon/favicon.png" type="image/x-icon")
+        link(rel="stylesheet", href="css/normalize-min.css")
+        link(rel="stylesheet" href="css/style.css")
+    body
+        .container
+            nav
+                ul.menu
+                    li.item
+                            a(href="index.html") Главная
+                    li.item
+                        a(href="#") Каталог
+                    li.item
+                        a(href="contacts.html") Контакты
+            hr
+            h1 Каталог 
+            ul.products
+                li
+                    a(href="asus.html") 
+                        img(src="img/jpg/asus/F507UF_1.jpg", alt="Asus")
+                        span Ноутбук Asus
+                li
+                    a(href="lenovo.html")
+                        img(src="img/jpg/lenovo/IdeaPAd_1.jpg", alt="Lenovo")
+                        span Ноутбук Lenovo
+                li
+                    a(href="hp.html") 
+                        img(src="img/jpg/hp/1.jpg", alt="HP")
+                        span Ноутбук HP
+            hr
+        footer
+            .copyright Все права защищены &copy; 2020 &nbsp; 
+                a(href="https://geekbrains.ru" target="_blank") GeekBrains

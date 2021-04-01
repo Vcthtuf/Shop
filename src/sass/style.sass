@@ -1,0 +1,245 @@
+@import 'fonts'
+@import 'variables'
+ 
+
+// ====  General styles  ====
+
+*
+    font-family: $Roboto
+    font-size: 16px
+
+a
+    text-decoration: none
+
+a, button
+    cursor: pointer
+
+li 
+    list-style-type: none
+
+img
+    display: block
+    width: 100%
+    height: auto
+
+h1 
+    text-align: center
+
+body
+    display: flex
+    flex-direction: column
+    max-width: 1200px
+    width: 100%
+    min-height: 100vh
+    margin: 0 auto
+    background-color: #f8f8f8
+
+.container
+    max-width: 1170px
+    width: 97.5%
+    margin: 0 auto 20px auto
+    flex: 1 0 auto
+
+// ==== Styles for menu ====
+
+nav
+    width: 70%
+    margin: 0 auto
+
+    ul 
+        display: flex
+        justify-content: space-around
+        padding: 20px 0
+        li 
+            font-style: italic
+            font-size: 20px
+            a 
+                color: #8B00FF
+                &:hover
+                    color: #f00
+
+// ==== Styles for main page ====
+
+p.main
+    width: 70%
+    margin: 0 auto
+    padding-bottom: 20px
+    text-indent: 40px
+    line-height: 1.4
+    text-align: justify
+
+// ==== Styles for page catalog ====
+
+.products
+    display: flex
+    justify-content: space-evenly
+    width: 70%
+    margin: 0 auto 30px auto
+    text-align: center
+    padding: 0
+
+    a 
+        display: block
+        text-align: center
+        margin: 0 auto
+        &:hover
+            color: red
+
+        img
+            display: block
+            margin: 0 auto
+            width: 35%
+
+// ==== Styles for pages of products ====
+
+.title
+    h1
+        text-align: center
+
+.images
+    display: flex
+    justify-content: space-evenly
+    margin: 40px 0
+    a 
+        flex-basis: 15%
+        
+    img
+        width: 100%  
+        box-shadow: 0 0 0 2px lightgrey
+        
+
+
+.descr
+    width: 50%
+    padding: 20px
+    margin: 0 auto 30px auto
+    background-color: #eaeaea
+
+    h3
+        color: #000000
+        font-size: 18px
+        font-weight: 400
+        text-align: center
+    &_short
+        p
+            color: #707070
+            font-size: 14px
+            font-style: italic
+            line-height: 16px
+            text-align: center
+    &_specifications
+        font-style: italic
+        p 
+            line-height: 2
+    ul 
+        margin: 0
+        padding: 0
+        li
+            margin-left: 15px
+            padding: 0 0 0 10px
+            list-style-image: url('../icon/arrow_right.png')
+            span
+                display: inline-block
+                margin-bottom: 10px
+            span:first-child
+                width: 65%
+                margin-right: 15px
+            span:last-child
+                width: 30%   
+    &_full
+        p 
+            color: #484343
+            font-size: 16px
+            font-weight: 400
+            line-height: 24px 
+
+.links
+    display: flex
+    justify-content: space-between
+    width: 80%
+    margin: 0 auto 15px auto
+    a 
+        color: grey 
+        &:hover
+            color: $blue
+
+// ==== Sryles for page contacts ====
+
+.main
+    width: 70%
+    margin: 0 auto
+    display: flex
+    justify-content: space-evenly
+    align-items: stretch
+
+.anketa
+    flex-basis: 40%
+    form
+        .item
+            &_title
+                font-size: 13px
+                margin-bottom: 5px
+                span
+                    color: red
+            &_field
+                margin-bottom: 10px
+                input,textarea
+                    border: 1px solid grey
+                    font-size: 13px
+                    width: 70%
+                    padding: 5px 10px
+                    border-radius: 3px
+                    &:focus
+                        outline: none
+                textarea
+                    height: 8em
+                    resize: none
+        .button
+            width: 77.45%
+            display: flex
+            justify-content: space-around    
+            .btn
+                display: block
+                font-size: 13px
+                cursor: pointer
+
+.contact
+    flex-basis: 40%
+    ul 
+        padding: 15px 0
+        margin: 0
+        li 
+            margin: 5px 0
+            padding: 10px 0
+            display: flex
+            border-bottom: 1px solid grey
+            .title 
+                flex-basis: 40%
+            .value
+                flex-basis: 60%
+                a 
+                    color: darkblue
+
+            &:last-child
+                border-bottom: none
+
+.map
+    width: 50%
+    margin: 15px auto
+    margin-bottom: 20px
+    iframe
+        width: 100%
+
+// ==== Styles for footer ====
+
+hr 
+    width: 60%
+    margin: 0 auto 15px auto
+
+footer
+    width: 60%
+    margin: 0 auto 30px auto
+    flex: 0 0 auto
+.copyright
+    text-align: center
+
